@@ -1,0 +1,71 @@
+1. Print “Hello World”
+print ("Hello World")
+2. Create a list called fruit that has Apples, Oranges and Bananas as values.
+fruits = ['Apples','Oranges','Bananas']
+3. Print the list.
+print (fruits)
+4. Change Oranges to Grapes using the numeric list index.
+fruits[fruit.index('Oranges')] = 'Grapes'
+#This took me a bit to work out but the concept was easy enough to understand
+5. Create a loop that prints out each item in the fruit list.
+for fruit in fruits:
+    print (fruit)
+6. Create a dictionary called people that has another dictionary for each Bob (age 22), Carol (age 47) and Justin (age 14) with their name and age. 
+people = {
+	1:{'Bob':22},
+	2:{'Carol':47},
+	3:{'Justin':14}
+	}
+
+7. Create a function that takes two numbers (a and b) and prints the total value when they are added.
+
+def summation(a,b):
+    sum = a+b
+    print (sum)
+
+8. Call your function with 5 and 5, 10 and 15 and 3 and 6.
+
+summation(5,5)--->10
+summation(5,5)--->25
+summation(5,5)--->9
+
+9. Create a function that takes user input of an integer and loops through printing that number plus 5 until it reaches 1000.
+def kilo(n):
+    m = n+5
+    while m <= 1000:
+        print(m)
+        m+=1
+
+#This took me a bit to figure out while I'm still getting used to control flows
+10. Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+#This isn't quite there yet but I'm sure I'm on the right track, I cant get the 'Fizzbuzz's' to show up
+def FizzBuzz(m):
+    while m <= 100:
+        m+=1
+        if m%3 == 0 and m%5 == 0:
+            print ('Fizzbuzz')
+        elif m%3 == 0:
+            print ('Fizz')
+        elif m%5 == 0:
+            print ('Buzz')
+        else:
+            print (m)
+
+
+
+11. Create a class called customer that takes the customer name as a variable and is initialized with age, location of Washington and a credit score of 718.
+
+class Customer(object):
+   def __init__(self, name, age, loc, credit):
+	self.name = name
+	self.age = age
+	self.loc = loc
+	self.credit = credit
+   
+#I understand the concept of classes and how Init/Constructors/get/set work but I dont have enough hands on experience to properly create one. 
+12. Create an object from your customer class with the name of Jessie.
+13. Print the name value of your object.
+14. Print the location of your object.
+15. Print the credit score of your object.
+16. Change the credit score of your object.
+17. Print the new credit score of your object.
